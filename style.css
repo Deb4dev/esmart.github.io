@@ -6,6 +6,17 @@
 
 }
 
+
+:root{
+    --primary-color:black;
+    --secondary-color:peachpuff;
+
+
+}
+.darkclass{
+    --primary-color:rgb(255, 255, 255);
+    --secondary-color:rgb(0, 0, 0);
+}
 .navbar {
     min-height: 150px;
     max-width: 100%;
@@ -14,7 +25,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+body{
+    background-color: var(--secondary-color);
+}
 header {
     min-height: 100vh;
     max-width: 100%;
@@ -44,8 +57,8 @@ li {
 
 ul li a {
     text-decoration: none;
-    color: black;
-    background: peachpuff;
+    color: var(--primary-color);
+    background:var(--secondary-color);
     padding: 10px 20px;
     margin: 10px;
     border: 2px solid blueviolet;
@@ -55,18 +68,39 @@ ul li a {
     transition: .5s;
 
 }
+ul li button{
+    text-decoration: none;
+    color:var(--primary-color);
+    background:var(--secondary-color);
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid blueviolet;
+    border-radius: 0.5rem;
+    font-weight: 1000;
+    cursor:pointer;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+ul li button:hover{
+    color:var(--secondary-color);
+    background:var(--primary-color);
+    border-color: red;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+}
 
 ul li a:hover {
     background: rgb(102, 36, 105);
     border-radius: 20px;
     letter-spacing: 2px;
-    color: black;
+    color:var(--primary-color);
 }
 
 
 
 h1 {
-    color: black;
+    color: var(--primary-color);
     text-align: center;
     font-size: 90px;
 }
@@ -78,3 +112,4 @@ lucky {
     font-variant: small-caps;
     letter-spacing: 1.5px;
 }
+
